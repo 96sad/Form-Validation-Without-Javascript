@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <button onclick="ChangeColor()" type="button" class="btn btn-primary">Primary</button> -->
+<div class="container">
+<form action="/" post="get">
+<div class="row">
+<div class="column">
+<input type="text" placeholder="Name*" name="Name" required oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('') "></div>
+<div class="column half">
+<input type="email" placeholder="Email*" name="Email" required oninvalid="this.setCustomValidity('Please Enter Your Email')" oninput="this.setCustomValidity('') "></div>
+<div class="column half">
+<input type="tel" placeholder="Phone*" name="Phone" required oninvalid="this.setCustomValidity('Please Enter Your Phone')" oninput="this.setCustomValidity('') " pattern="[1-9]{1}[0-9]{9}"></div>
+<div class="column">
+<textarea placeholder="Message*" name="Message" required oninvalid="this.setCustomValidity('Please Enter Your Message')" oninput="this.setCustomValidity('') "></textarea>
+</div>
+<div class="column">
+<input type="submit" value="SUBMIT">
+</div>
+</div>
+</form>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
